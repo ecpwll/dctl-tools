@@ -14,9 +14,9 @@ Restart Resolve, add the DCTL effect to a node, and select the desired tool.
 
 ---
 
-## HellwigHueMesh
+## CAM-Mesh
 
-Adjust hue, saturation, and brightness of six color regions using a tetrahedral mesh in the Hellwig color appearance model.
+Adjust hue, saturation, and brightness of six color regions using a tetrahedral mesh with a choice of CAM16, Hellwig 2022, and ZCAM appearance models.
 
 ---
 
@@ -27,17 +27,21 @@ Shape saturation and density with a choice of RGB and perceptual models.
 ### Saturation models
 
 - **Additive:** Simple log-based additive saturation.
+- **CAM - CAM16:** Adjusts colorfulness using CAM16 while aiming to preserve model brightness and hue.
+- **CAM - Hellwig HK:** Adjusts colorfulness using the Hellwig appearance model with the Helmholtz–Kohlrausch extension, aiming to preserve model brightness and hue.
+- **CAM - ZCAM:** Adjusts colorfulness using ZCAM while aiming to preserve model brightness and hue.
 - **Log HSV:** Log-based HSV saturation. Subtractive like appearance.
 - **Luminance Preserving:** Adjusts saturation in linear light while preserving luminance.
-- **Perceptual (Hellwig HK):** Adjusts colorfulness using the Hellwig appearance model with the Helmholtz–Kohlrausch extension, aiming to preserve model brightness and hue.
 
 ### Density models
 
 Positive Density darkens more colorful pixels; negative Density brightens them. Saturation is applied before density.
 
-- **RGB Minimum-Based:** Darkens colors based on the difference between their strongest and weakest RGB channels. Affects different hues more evenly than Average-Based.
-- **RGB Average-Based:** Darkens colors based on the difference between their strongest channel and the average of all three channels. Gives different emphasis to different hues.
-- **Perceptual (Hellwig HK):** Darkens colors based on their colorfulness in the Hellwig appearance model, while preserving model saturation and hue. Affects all hues evenly.
+- **CAM - CAM16:** Darkens colors based on CAM16 colorfulness while preserving model saturation and hue.
+- **CAM - Hellwig HK:** Darkens colors based on their colorfulness in the Hellwig appearance model, while preserving model saturation and hue. Affects all hues evenly.
+- **CAM - ZCAM:** Darkens colors based on ZCAM colorfulness while preserving model saturation and hue.
+- **RGB - Average-Based:** Darkens colors based on the difference between their strongest channel and the average of all three channels. Gives different emphasis to different hues.
+- **RGB - Minimum-Based:** Darkens colors based on the difference between their strongest and weakest RGB channels. Affects different hues more evenly than Average-Based.
 
 ---
 

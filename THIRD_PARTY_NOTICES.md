@@ -1,10 +1,10 @@
 # Third-party notices
 
-## Colour 0.4.4
+## Colour 0.4.4 / 0.4.7
 
 Colour was used for coefficient calculations and as an appearance-model reference. Its BSD-3-Clause notice is retained for possible implementation adaptation and accompanies these encrypted DCTLs. This license applies to the relevant third-party material, not the entire project.
 
-Reference: https://github.com/colour-science/colour/blob/v0.4.4/LICENSE
+References: https://github.com/colour-science/colour/blob/v0.4.4/LICENSE and https://github.com/colour-science/colour/blob/v0.4.7/LICENSE
 
 Copyright 2013 Colour Developers
 
